@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="classes" thread-count="2">
+    <test verbose="2" preserve-order="true" name="D:/mobile automation/Playwright_Project1">
+        <classes>
+            <class name="Testcases.SignInTest">
+                <methods>
+                    <include name="LoginWithValidCredentials"/>
+                    <include name="RememeberMeFunctionalityNotPresent"/>
+                    <include name="ForgetPasswordFunctionality"/>
+                </methods>
+            </class>
+            <class name="Testcases.TestBuyingProductFromCatagory">
+                <methods>
+                    <include name="TestBuyProductFromFeaturedProduct"/>
+                    <include name="BuySameProductMultipleTimes"/>
+                    <include name="RemoveSameProductMultipleTimes"/>
+                </methods>
+            </class>
+            <class name="Testcases.TestCart">
+                <methods>
+                    <include name="TestCartOption"/>
+                    <include name="TestCartMessageWhenNoProductIsAdded"/>
+                </methods>
+            </class>
+            <class name="Testcases.TestCheckoutProcess">
+                <methods>
+                    <include name="TestCODWithRightCredentials"/>
+                    <include name="TestOnlinePayment"/>
+                </methods>
+            </class>
+            <class name="Testcases.TestHomePage">
+                <methods>
+                    <include name="TestWebsiteTitle"/>
+                    <include name="TestSearchBar"/>
+                    <include name="HomepageHeaderOptions"/>
+                    <include name="homePageMenu"/>
+                    <include name="Newarrivals"/>
+                    <include name="BuyNowFromHomepage"/>
+                    <include name="CompareFromHomepage"/>
+                    <include name="FindShopOption"/>
+                    <include name="ContactOption"/>
+                    <include name="TestSocialMediaOption"/>
+                </methods>
+            </class>
+            <class name="Testcases.TestRegisterOption">
+                <methods>
+                    <include name="RegisterTestWithValidCredentials"/>
+                </methods>
+            </class>
+            <class name="Testcases.TestSearchBarInHomepage">
+                <methods>
+                    <include name="TestSearchBar"/>
+                    <include name="TestPutBlankText"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
